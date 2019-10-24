@@ -7,6 +7,8 @@ private : //dans la classe elle-même
 	int nX;
 	int nY;
 
+	int *pnX;
+
 protected : //dans la classe et chez ses enfants 
 	
 public: //accessible partt, dans la classe et à l'extérieur
@@ -20,6 +22,16 @@ public: //accessible partt, dans la classe et à l'extérieur
 	//mutateurs
 	void setX(int nX);
 	void setY(int nY);
+
+	//init
+	void init(int nX, int nY);
+
+	//constructeurs
+	CPoint();
+	CPoint(int nX, int nY);
+
+	//destructeur
+	~CPoint();
 
 };
 
